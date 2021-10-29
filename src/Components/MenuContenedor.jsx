@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 
-class About2 extends React.Component {
+class MenuContenedor extends React.Component {
     render(){
         return (
             <>
@@ -16,4 +16,4 @@ class About2 extends React.Component {
         );
     }
 }
- export default About2;
+ export default MenuContenedor;
