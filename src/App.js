@@ -4,11 +4,15 @@ import AboutContenedor from "./Components/AboutContenedor.jsx";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import MenuContenedor from './Components/MenuContenedor';
 import FooterContenedor  from './Components/FooterContenedor';
+import Navbar from "./Components/Navbar";
+
 
 
 function App() {
   return (
     <BrowserRouter>
+
+    <Navbar />
     <Switch>
     <Route exact path="/about" component={AboutContenedor} />
     <Route exact path="/about2" component={MenuContenedor} />
