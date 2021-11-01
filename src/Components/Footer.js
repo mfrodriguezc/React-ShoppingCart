@@ -11,6 +11,7 @@ class Footer extends Component {
     render(){
         return(
         <>
+        <div className="container-fluid">
         <footer style={{backgroundColor: '#3F1106'}}>
         <br /><br />
         <div className="row" align="center">
@@ -41,7 +42,7 @@ class Footer extends Component {
         </div>
         <br /><br />
       </footer>
-        
+        </div>
         
         
         </>

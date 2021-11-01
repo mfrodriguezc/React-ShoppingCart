@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import HaztupedidoI from "./haztupedidoI";
+import HaztupedidoII from "./HaztupedidoII";
 
 
 class MenuContenedor extends React.Component {
@@ -8,7 +8,7 @@ class MenuContenedor extends React.Component {
         return (
             <>
              
-             <HaztupedidoI />
+             <HaztupedidoII />
              
             </>
         );
