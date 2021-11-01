@@ -7,6 +7,7 @@ import MenuContenedor2 from './Components/MenuContenedor2';
 import FooterContenedor  from './Components/FooterContenedor';
 import Navbar from "./Components/Navbar";
 import Layout from './Components/Layout';
+import CarritoContenedor from './Components/CarritoContenedor';
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
     <Route exact path="/about" component={AboutContenedor} />
     <Route exact path="/menu" component={MenuContenedor} />
     <Route exact path="/menu2" component={MenuContenedor2} />
+    <Route exact path="/carrito" component={CarritoContenedor} />
+
 
 </Switch>
 </Layout>         
