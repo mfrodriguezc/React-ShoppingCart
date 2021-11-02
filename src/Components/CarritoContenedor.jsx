@@ -14,6 +14,8 @@ class CarritoContenedor extends React.Component {
              <Carrito />
              <Link to="/about2">About2</Link>
 
+             
+
             </>
         );
     }
