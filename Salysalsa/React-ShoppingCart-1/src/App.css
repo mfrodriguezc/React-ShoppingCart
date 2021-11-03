@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+#textosBlanco{
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-bar a{
+  font-size:15px;
+    margin:0 15px;
+    text-decoration:none;
+    color:#ffff;
+}
+.nav-bar{
+  display:flex;
+    align-items:center;
+    justify-content:space-around;
+    background:rgba(57, 61, 63, 0.993);
+    color:#ffff;
+    padding:10px;
+}
+.nav-bar span{
+  font-size: 40px;
+}
