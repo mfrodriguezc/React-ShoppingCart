@@ -4,13 +4,13 @@ import Propuesta from "./Propuesta";
 import Recomendado from "./Recomendado";
 import Evento from "./Evento";
 import Testimonios from "./AboutTestimonios.js";
-import Testimonio1 from "../img/testimonio1@2x.png";
-import menu from "../img/menu@2x.png";
-import icono1 from "../img/icono1@2x.png";
-import icono2 from "../img/icono2@2x.png";
-import icono3 from "../img/icono3@2x.png";
-import icono4 from "../img/icono4@2x.png";
-import logo from "../img/logo@2x.png";
+import Testimonio1 from "../insumos/testimonio1@2x.png";
+import menu from "../insumos/menu@2x.png";
+import icono1 from "../insumos/icono1@2x.png";
+import icono2 from "../insumos/icono2@2x.png";
+import icono3 from "../insumos/icono3@2x.png";
+import icono4 from "../insumos/icono4@2x.png";
+import logo from "../insumos/logo@2x.png";
 
 
 

@@ -64,7 +64,7 @@ class HaztupedidoI extends Component {
             <div className="card mb-12 shadow-sm">
               <section className="row" id="dos" style={{paddingBottom: '30px'}}>
                 <div className="media col-sm-9">
-                  <img src="insumos/menu2@2x.png" alt="Arroz Mansaf" style={{paddingRight: '40px'}} width="240px" height="150px" />
+                  <img src={this, this.props.menu2} alt="Arroz Mansaf" style={{paddingRight: '40px'}} width="240px" height="150px" />
                   <div className="media-body">
                     <h4 className="display-5"><strong>Arroz Mansaf</strong></h4>
                     <p className="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sit fugit ad delectus at 
@@ -92,7 +92,7 @@ class HaztupedidoI extends Component {
             <div className="card mb-12 shadow-sm">
               <section className="row" id="tres" style={{paddingBottom: '30px'}}>
                 <div className="media col-sm-9">
-                  <img src="insumos/menu3@2x.png" alt="Cocido Haifa" style={{paddingRight: '40px'}} width="240px" height="150px" />
+                  <img src={this, this.props.menu3} alt="Cocido Haifa" style={{paddingRight: '40px'}} width="240px" height="150px" />
                   <div className="media-body">
                     <h4 className="display-5"><strong>Cocido Haifa</strong></h4>
                     <p className="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sit fugit ad delectus at 
@@ -120,7 +120,7 @@ class HaztupedidoI extends Component {
             <div className="card mb-12 shadow-sm">
               <section className="row" id="cuatro" style={{paddingBottom: '30px'}}>
                 <div className="media col-sm-9">
-                  <img src="insumos/menu4@2x.png" alt="Tentaculo de Parrilla" style={{paddingRight: '40px'}} width="240px" height="150px" />
+                  <img src={this, this.props.menu4} alt="Tentaculo de Parrilla" style={{paddingRight: '40px'}} width="240px" height="150px" />
                   <div className="media-body">
                     <h4 className="display-5"><strong>Tentaculo de Parrilla</strong></h4>
                     <p className="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sit fugit ad delectus at 
@@ -148,7 +148,7 @@ class HaztupedidoI extends Component {
             <div className="card mb-12 shadow-sm">
               <section className="row" id="cinco" style={{paddingBottom: '30px'}}>
                 <div className="media col-sm-9">
-                  <img src="insumos/foto1@2x.png" alt="Brochetas Sal&Salsa" style={{paddingRight: '40px'}} width="240px" height="150px" />
+                  <img src={this, this.props.menu5} alt="Brochetas Sal&Salsa" style={{paddingRight: '40px'}} width="240px" height="150px" />
                   <div className="media-body">
                     <h4 className="display-5"><strong>Brochetas Sal&amp;Salsa</strong></h4>
                     <p className="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sit fugit ad delectus at 
@@ -176,7 +176,7 @@ class HaztupedidoI extends Component {
             <div className="card mb-12 shadow-sm">
               <section className="row" id="seis" style={{paddingBottom: '30px'}}>
                 <div className="media col-sm-9">
-                  <img src="insumos/menu5@2x.png" alt="Camarones BBQ" style={{paddingRight: '40px'}} width="240px" height="150px" />
+                  <img src={this, this.props.menu6} alt="Camarones BBQ" style={{paddingRight: '40px'}} width="240px" height="150px" />
                   <div className="media-body">
                     <h4 className="display-5"><strong>Camarones BBQ</strong></h4>
                     <p className="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sit fugit ad delectus at 

@@ -11,6 +11,7 @@ import CarritoContenedor from './Components/CarritoContenedor';
 import ServiciosContenedor from "./Components/Servicioscontenedor.jsx";
 import FormContacto from "./Components/Servicioscontenedor.jsx";
 import Reserva from "./Components/Servicioscontenedor.jsx";
+import IndexContenedor from "./Components/IndexContenedor.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
   <Layout>
     
     <Switch>
+    <Route exact path="/" component={IndexContenedor} />
     <Route exact path="/about" component={AboutContenedor} />
     <Route exact path="/menu" component={MenuContenedor} />
     <Route exact path="/menu2" component={MenuContenedor2} />
