@@ -18,7 +18,7 @@ class AboutContenedor extends React.Component {
              
              <About aboutimg1={Aboutimg1} personal1={Personal1} personal2={Personal2} personal3={Personal3} />
              <Testimonios testimonio1={Testimonio1} />
-             <Link to="/about2">About2</Link>
+             
 
             </>
         );

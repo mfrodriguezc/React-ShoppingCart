@@ -1,28 +1,20 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import HaztupedidoI from "./haztupedidoI";
-import ScriptTag from 'react-script-tag';
+
+//import Pedido from "./pedido.js";
+import Menu1 from "../insumos/menu1@2x.png";
 
 
-const Carrito = props => (
-    <ScriptTag type="text/javascript" src="/carritof.js" />
-    )
-    const CasillasCount = props => (
-        <ScriptTag type="text/javascript" src="/casillascount.js" />
-        )
-        const Pedido = props => (
-            <ScriptTag type="text/javascript" src="/pedido.js" />
-            )
+
 
 class MenuContenedor extends React.Component {
-    render(){
+    
+    render(){            
         return (
-            <>
+            <>            
+             <HaztupedidoI menu1={Menu1} />
              
-             <HaztupedidoI />
-             <Pedido />
-             <CasillasCount />
-             <Carrito />
             </>
         );
     }

@@ -1,4 +1,4 @@
-class Carrito {
+ class Carrito {
 
     //Añadir producto al carrito
     comprarProducto(e){
@@ -14,7 +14,7 @@ class Carrito {
     }
 
     //Leer datos del producto
-    leerDatosProducto(producto){
+     leerDatosProducto(producto){
         const infoProducto = {
             imagen : producto.querySelector('img').src,
             titulo: producto.querySelector('h4').textContent,
@@ -53,7 +53,7 @@ class Carrito {
 
     //muestra producto seleccionado en carrito
     // <td>${producto.descripcion}</td> por si quiero insertar la descripcion
-    insertarCarrito(producto){
+     insertarCarrito(producto){
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>
@@ -74,7 +74,7 @@ class Carrito {
     }
 
     //Eliminar el producto del carrito en el DOM
-    eliminarProducto(e){
+     eliminarProducto(e){
         e.preventDefault();
         let producto, productoID;
         if(e.target.classList.contains('borrar-producto')){
@@ -90,7 +90,7 @@ class Carrito {
     
 
     //Elimina todos los productos
-    vaciarCarrito(e){
+     vaciarCarrito(e){
         e.preventDefault();
         while(listaProductos.firstChild){
             listaProductos.removeChild(listaProductos.firstChild);
@@ -101,7 +101,7 @@ class Carrito {
     }
 
     //Almacenar en el LS
-    guardarProductosLocalStorage(producto){
+     guardarProductosLocalStorage(producto){
         let productos;
         //Toma valor de un arreglo con datos del LS
         productos = this.obtenerProductosLocalStorage();
@@ -112,7 +112,7 @@ class Carrito {
     }
 
     //Comprobar que hay elementos en el LS
-    obtenerProductosLocalStorage(){
+     obtenerProductosLocalStorage(){
         let productoLS;
 
         //Comprobar si hay algo en LS
@@ -126,7 +126,7 @@ class Carrito {
     }
 
     //Mostrar los productos guardados en el LS
-    leerLocalStorage(){
+     leerLocalStorage(){
         let productosLS;
         productosLS = this.obtenerProductosLocalStorage();
         productosLS.forEach(function (producto){
@@ -153,7 +153,7 @@ class Carrito {
     /* <td>
                     <input type="number" class="form-control cantidad" min="1" value=${producto.cantidad}>
                 </td> */
-    leerLocalStorageCompra(){
+     leerLocalStorageCompra(){
         let productosLS;
         productosLS = this.obtenerProductosLocalStorage();
         productosLS.forEach(function (producto){
@@ -202,7 +202,7 @@ class Carrito {
     }
 
     //Eliminar producto por ID del LS
-    eliminarProductoLocalStorage(productoID){
+     eliminarProductoLocalStorage(productoID){
         let productosLS;
         //Obtenemos el arreglo de productos
         productosLS = this.obtenerProductosLocalStorage();
@@ -218,12 +218,12 @@ class Carrito {
     }
 
     //Eliminar todos los datos del LS
-    vaciarLocalStorage(){
+     vaciarLocalStorage(){
         localStorage.clear();
     }
 
     //Procesar pedido
-    procesarPedido(e){
+     procesarPedido(e){
         e.preventDefault();
 
         if(this.obtenerProductosLocalStorage().length === 0){
@@ -241,7 +241,7 @@ class Carrito {
     }
 
     //Calcular montos
-    calcularTotal(){
+     calcularTotal(){
         let productosLS;
         let total = 0, igv = 0, subtotal = 0;
         productosLS = this.obtenerProductosLocalStorage();
@@ -259,7 +259,7 @@ class Carrito {
         document.getElementById('total').value = "$" + total;
     }
 
-    obtenerEvento(e) {
+     obtenerEvento(e) {
         e.preventDefault();
         let id, cantidad, producto, productosLS;
         if (e.target.classList.contains('cantidad')) {

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Helmet} from "react-helmet";
 
 class Carrito extends Component {
 
@@ -169,6 +170,12 @@ class Carrito extends Component {
             </div>
           </div>{/* aqui finaliza el modal */}
         </main>
+        <Helmet>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       <script src="/path/to/carritof.js" type="text/javascript" />
+       <script src="/path/to/compra.js" type="text/javascript" />
+       </Helmet>
       </div>
         
         </>

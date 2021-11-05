@@ -8,7 +8,9 @@ import FooterContenedor  from './Components/FooterContenedor';
 import Navbar from "./Components/Navbar";
 import Layout from './Components/Layout';
 import CarritoContenedor from './Components/CarritoContenedor';
-
+import ServiciosContenedor from "./Components/Servicioscontenedor.jsx";
+import FormContacto from "./Components/Servicioscontenedor.jsx";
+import Reserva from "./Components/Servicioscontenedor.jsx";
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
     <Route exact path="/menu" component={MenuContenedor} />
     <Route exact path="/menu2" component={MenuContenedor2} />
     <Route exact path="/carrito" component={CarritoContenedor} />
+    <Route exact path="/servicios" component={ServiciosContenedor} />
+    <Route exact path="/contacto" component={FormContacto} />
+    <Route exact path="/reserva" component={Reserva} />
 
 
 </Switch>

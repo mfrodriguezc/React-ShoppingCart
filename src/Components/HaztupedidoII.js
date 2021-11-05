@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import {Helmet} from "react-helmet";
 
 class HaztupedidoII extends Component {
 
@@ -119,7 +119,7 @@ class HaztupedidoII extends Component {
                   <h5>CANTIDAD</h5>
                   <div className="counter">
                     <div className="counter-inner">
-                      <button className="btn" onclick="productCount4(false)">-</button>
+                      <button className="btn" onclick="">-</button>
                       <input type="number" className="cantidad" defaultValue={1} id="input4" />
                       <button className="btn" onclick="productCount4(true)">+</button>
                       <br />
@@ -206,6 +206,12 @@ class HaztupedidoII extends Component {
           </div>
         </aside>
         {/*CONTENIDO*/}
+
+        <Helmet>
+       <script src="/path/to/carritof.js" type="text/javascript" />
+       <script src="/path/to/casillascount.js" type="text/javascript" />
+       <script src="/path/to/pedido.js" type="text/javascript" />
+       </Helmet>
       </main>
        
         

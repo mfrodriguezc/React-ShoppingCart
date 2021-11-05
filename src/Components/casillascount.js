@@ -1,4 +1,4 @@
-function productCount(product){
+export function productCount(product)  {
     const inputBtn = document.getElementById('input1').value;
     const newInputBtn = parseInt(inputBtn);
     let total = newInputBtn;

@@ -1,13 +1,13 @@
-const carro = new Carrito();
-const carrito = document.getElementById('carrito');
-const productos = document.getElementById('lista-productos');
-const listaProductos = document.querySelector('#lista-carrito tbody');
-const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
-const procesarPedidoBtn = document.getElementById('procesar-pedido');
+ const carro = new Carrito();
+ const carrito = document.getElementById('carrito');
+ const productos = document.getElementById('lista-productos');
+ const listaProductos = document.querySelector('#lista-carrito tbody');
+ const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
+ const procesarPedidoBtn = document.getElementById('procesar-pedido');
 
 cargarEventos();
 
-function cargarEventos(){
+ function cargarEventos(){
 
     //Se ejecuta cuando se presionar agregar carrito
     productos.addEventListener('click', (e)=>{carro.comprarProducto(e)});
@@ -25,7 +25,7 @@ function cargarEventos(){
     procesarPedidoBtn.addEventListener('click', (e)=>{carro.procesarPedido(e)});
 }
 
-function confirmarCarrito()
+ function confirmarCarrito()
     {
         var respuesta=confirm("Estas seguro que deseas agregar el producto al carrito?");
         if ( respuesta == true){

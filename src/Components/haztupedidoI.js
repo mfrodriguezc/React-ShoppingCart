@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import {Helmet} from "react-helmet";
+import ScriptTag from 'react-script-tag';
 
 class HaztupedidoI extends Component {
 
@@ -7,11 +9,22 @@ class HaztupedidoI extends Component {
         super(props);
     }
 
+    
+
 
     render(){
+
+
         return(
         <>
-         
+
+
+
+
+
+            
+
+       <div className="application">  
        <main className="container-fluid" >
        <div className="container-fluid">
         <section>
@@ -22,7 +35,7 @@ class HaztupedidoI extends Component {
             <div className="card mb-12 shadow-sm">
               <section className="row" id="uno" style={{paddingBottom: '30px'}}>
                 <div className="media col-sm-9">
-                  <img src="insumos/menu1@2x.png" alt="Costillas Kosher" style={{paddingRight: '40px'}} width="240px" height="150px" />
+                  <img src={this, this.props.menu1} alt="Costillas Kosher" style={{paddingRight: '40px'}} width="240px" height="150px" />
                   <div className="media-body">
                     <h4 className="display-5"><strong>Costillas Kosher</strong></h4>
                     <p className="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sit fugit ad delectus at 
@@ -35,13 +48,14 @@ class HaztupedidoI extends Component {
                   <h5>CANTIDAD</h5>
                   <div className="counter">
                     <div className="counter-inner">
-                      <button className="btn" onclick="productCount(false)">-</button>
+                      <button className="btn" onclick="">-</button>
                       <input type="Number" className="cantidad" defaultValue={1} id="input1" /> 
-                      <button className="btn" onclick="productCount(true)">+</button>
+                      <button className="btn" onclick="">+</button>
                       <br />
                     </div>
                   </div>
-                  <a href className="btn btn-warning btn-outline-light agregar-carrito" data-id={1} onclick="return confirmarCarrito()"><ion-icon name="cart" />Agregar al Carrito</a>
+                  <a href className="btn btn-warning btn-outline-light agregar-carrito" 
+                  data-id={1} onclick="return confirmarCarrito()"><ion-icon name="cart" />Agregar al Carrito</a>
                 </div>
               </section>
             </div>
@@ -211,9 +225,9 @@ class HaztupedidoI extends Component {
           </div>
         </aside>
         {/*CONTENIDO*/}
-       
+      
       </main>
-        
+      </div>  
       
         
         </>

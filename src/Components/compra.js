@@ -1,20 +1,20 @@
-const compra = new Carrito();
-const listaCompra = document.querySelector("#lista-compra tbody");
-const listaCompra2 = document.querySelector("#lista-compra2 tbody");
-const carrito = document.getElementById('carrito');
-const carrito2 = document.getElementById('carrito2');
-const procesarCompraBtn = document.getElementById('procesar-compra');
+ const compra = new Carrito();
+ const listaCompra = document.querySelector("#lista-compra tbody");
+ const listaCompra2 = document.querySelector("#lista-compra2 tbody");
+ const carrito = document.getElementById('carrito');
+ const carrito2 = document.getElementById('carrito2');
+ const procesarCompraBtn = document.getElementById('procesar-compra');
 //const procesarReservaBtn = document.getElementById('procesar-reserva');
 
-const cliente = document.getElementById('cliente');
-const correo = document.getElementById('correo');
+ const cliente = document.getElementById('cliente');
+ const correo = document.getElementById('correo');
 
 //const nombre = document.getElementById('nombre');
 //const email = document.getElementById('email');
 
 cargarEventos();
 
-function cargarEventos() {
+ function cargarEventos() {
     document.addEventListener('DOMContentLoaded', compra.leerLocalStorageCompra());
 
     //Eliminar productos del carrito
@@ -37,7 +37,7 @@ function cargarEventos() {
 
 
 
-function calcularTotalPrecio() {
+ function calcularTotalPrecio() {
     // Limpiamos precio anterior
     total = 0;
     // Recorremos el array del carrito
@@ -52,7 +52,7 @@ function calcularTotalPrecio() {
     DOMtotal.textContent = total.toFixed(2);
 }
 
-function procesarCompra() {
+ function procesarCompra() {
     // e.preventDefault();
     if (compra.obtenerProductosLocalStorage().length === 0) {
         Swal.fire({
