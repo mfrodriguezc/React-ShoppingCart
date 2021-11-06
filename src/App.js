@@ -20,14 +20,14 @@ function App() {
   <Layout>
     
     <Switch>
-    <Route exact path="/" component={IndexContenedor} />
-    <Route exact path="/about" component={AboutContenedor} />   
-    <Route exact path="/menu" > <Haztupedidoo/> </Route>
-    <Route exact path="/menu2" component={MenuContenedor2} />
-    <Route exact path="/carrito" component={CarritoContenedor} />
-    <Route exact path="/servicios" component={ServiciosContenedor} />
-    <Route exact path="/contacto" component={FormContacto} />
-    <Route exact path="/reserva" component={Reserva} />
+    <Route basename={process.env.PUBLIC_URL} exact path="/" component={IndexContenedor} />
+    <Route basename={process.env.PUBLIC_URL} exact path="/about" component={AboutContenedor} />   
+    <Route basename={process.env.PUBLIC_URL} exact path="/menu" > <Haztupedidoo/> </Route>
+    <Route basename={process.env.PUBLIC_URL} exact path="/menu2" component={MenuContenedor2} />
+    <Route basename={process.env.PUBLIC_URL} exact path="/carrito" component={CarritoContenedor} />
+    <Route basename={process.env.PUBLIC_URL} exact path="/servicios" component={ServiciosContenedor} />
+    <Route basename={process.env.PUBLIC_URL} exact path="/contacto" component={FormContacto} />
+    <Route basename={process.env.PUBLIC_URL} exact path="/reserva" component={Reserva} />
 
 
 </Switch>
