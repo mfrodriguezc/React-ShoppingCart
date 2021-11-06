@@ -1,26 +1,11 @@
-import './App.css';
-
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import {Form} from "react-bootstrap";
-import {Grid, Row, Col} from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-  crossorigin="anonymous"
-/>
-
-
-class FormContacto extends React.Component {
+class Contacto extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: "" };
+    
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -35,107 +20,114 @@ class FormContacto extends React.Component {
     event.preventDefault();
   }
 
-  render(){
+  render() {
     return (
-      <Container>
-        <Row>
-          <Container fluid>
-            <Row>
-              <Col>
-                <h1>Contáctanos</h1>
-              </Col>
-              <br />
-            </Row>
-          </Container>
-        </Row>
-        <Row>
-          <Col>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Nesciunt, corrupti! In at sint odit accusamus esse optio aut
-              facilis eum, porro cupiditate omnis iure odio placeat
-              nostrum ad, repudiandae ex? Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Nostrum obcaecati omnis labore
-              impedit harum corporis ex quas sequi. Omnis, molestias amet.
-              Unde porro exercitationem, praesentium asperiores cum dolore
-              dolorem? Quam!
-            </p>
-            <br />
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis obcaecati saepe voluptatum ut laudantium ad
-              laboriosam neque omnis, ullam nisi! Ipsa rem aliquam
-              dolores, dolorem necessitatibus voluptatibus vitae possimus
-              eos! Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Nesciunt, aliquam neque. Vero nemo debitis culpa
-              voluptas dolores? Illum veritatis vel, minima eveniet
-              molestias voluptatibus corporis? Quia sequi perspiciatis
-              facere fugit?
-            </p>
-          </Col>
-          <Col>
-            <Form>
-              <Row className="align-items-center">
-                <Col xs="auto" className="my-1">
-                  <Form.Label
-                    className="me-sm-2"
-                    htmlFor="inlineFormCustomSelect"
-                    visuallyHidden
-                  >
-                  </Form.Label>
-                  <Form.Select className="me-sm-2" id="inlineFormCustomSelect" required>
-                    <option value="0">Seleccione el servicio</option>
-                    <option value="1">Aniversario</option>
-                    <option value="2">Cena con Amigos</option>
-                    <option value="3">Celebración de cumpleaños</option>
-                    <option value="4">Declaraciones o propuestas</option>
-                    <option value="5">Despedidas</option>
-                    <option value="6">Fiestas infantiles</option>
-                  </Form.Select>
-                </Col>
+      <>
+        {/* */}
+        <style dangerouslySetInnerHTML={{__html: " \n\nh1{\n  padding: 5%;\n  color: rgb(168, 17, 17);\n}\n\n.p{\n  padding: 5%;\n}\n\n.label{\n  padding: 10%;\n}\n\n" }} />
+        <div>
+          <title>Contacto</title>
+          <div className="container">
+            <div className="col">
+              <div className="col-sm">
+                <h1 id="cont">Contáctanos</h1>
+              </div>
+              <div className="row">
+                <div className="col-sm">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt, corrupti! In at sint odit accusamus esse optio aut
+                    facilis eum, porro cupiditate omnis iure odio placeat
+                    nostrum ad, repudiandae ex? Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Nostrum obcaecati omnis labore
+                    impedit harum corporis ex quas sequi. Omnis, molestias amet.
+                    Unde porro exercitationem, praesentium asperiores cum dolore
+                    dolorem? Quam!
+                  </p>
+                  <br />
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis obcaecati saepe voluptatum ut laudantium ad
+                    laboriosam neque omnis, ullam nisi! Ipsa rem aliquam
+                    dolores, dolorem necessitatibus voluptatibus vitae possimus
+                    eos! Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Nesciunt, aliquam neque. Vero nemo debitis culpa
+                    voluptas dolores? Illum veritatis vel, minima eveniet
+                    molestias voluptatibus corporis? Quia sequi perspiciatis
+                    facere fugit?
+                  </p>
+                </div>
+                <div className="col-sm">
+                  <div className="container" id="bcont">
+                    <form onSubmit={this.handleSubmit}>
+                      <div className="form-group">
+                        <label>
+                          Seleccione el servicio:
+                          <select required value={this.state.value} onChange={this.handleChange}>            
+                            <option value="aniversario">Aniversario</option>
+                            <option value="cenaAmigos">Cena con Amigos</option>
+                            <option value="celebracionCumpleaños">Celebracion de Cumpleaños</option>
+                            <option value="declaracionPropuesta">Declaraciones o Propuestas</option>
+                            <option value="despedida">Despedidas</option>
+                            <option value="fiestaInfantil">Fiestas Infantiles</option>
+                          </select>
+                        </label>
 
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                  <Form.Control required type="email" placeholder="Asunto" />
-                </Form.Group>
+                        <br />
 
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
-                  <Form.Control required type="email" placeholder="Nombre Completo" />
-                </Form.Group>
+                        <label>
+                          Asunto:
+                          <input required type="text" value={this.state.value} onChange={this.handleChange} />
+                        </label>
 
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
-                  <Form.Control required type="email" placeholder="Correo Electronico" />
-                </Form.Group>
+                        <br />
 
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                  <Form.Control required as="textarea" rows={6} placeholder="Su mensaje"/>
-                </Form.Group>
+                        <label>
+                          Nombre Completo:
+                          <input required type="text" value={this.state.value} onChange={this.handleChange} />
+                        </label>
 
-                {['checkbox'].map((type) => (
-                  <div key={`default-${type}`} className="mb-3">
-                    <Form.Check 
-                      required
-                      type={type}
-                      id={`default-${type}`}
-                      label={`Acepto términos y condiciones`}
-                    />
+                        <br />
+
+                        <label>
+                          Correo Electronico:
+                          <input required type="text" value={this.state.value} onChange={this.handleChange} />
+                        </label>
+
+                        <br />
+
+                        <label>
+                          Su Mensaje:
+                          <textarea required type="text" value={this.state.value} onChange={this.handleChange} />
+                        </label>
+
+                        <br />
+
+                        <label>
+                          Acepto términos y condiciones
+                          <input required name="isGoing" type="checkbox" checked={this.state.isGoing} onChange={this.handleInputChange} />
+                        </label>
+
+                        <br />
+
+                        <input type="submit" value="Enviar" />
+
+                      </div>
+                    </form>
                   </div>
-                ))}
-
-                <Col xs="auto" className="my-1">
-                  <Button type="submit">Enviar</Button>
-                </Col>
-              </Row>
-            </Form>
-          </Col>
-        </Row>
-      </Container>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
     );
   }
 }
 
-ReactDOM.render(
+/*ReactDOM.render(
   <FormContacto />,
   document.getElementById('root')
-);
+);*/
 
-export default FormContacto;
+export default Contacto;

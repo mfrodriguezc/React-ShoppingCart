@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import {Helmet} from "react-helmet";
 import ScriptTag from 'react-script-tag';
+import { productCount } from "./casillascount";
 
 class HaztupedidoI extends Component {
 
     constructor(props){
         super(props);
+    
     }
 
     
@@ -48,9 +50,9 @@ class HaztupedidoI extends Component {
                   <h5>CANTIDAD</h5>
                   <div className="counter">
                     <div className="counter-inner">
-                      <button className="btn" onclick="">-</button>
+                      <button className="btn" onclick={this.productCount(false)}>-</button>
                       <input type="Number" className="cantidad" defaultValue={1} id="input1" /> 
-                      <button className="btn" onclick="">+</button>
+                      <button className="btn" onclick={this.productCount(true)}>+</button>
                       <br />
                     </div>
                   </div>

@@ -1,4 +1,5 @@
- class Carrito {
+
+export class Carrito {
 
     //Añadir producto al carrito
     comprarProducto(e){

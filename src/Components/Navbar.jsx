@@ -5,7 +5,7 @@ function Navbar(){
     return(
     <>
     <div className="nav-bar">
-<Link to="/Nav"><span>Sal&Salsa</span></Link>
+<Link to="/"><span>Sal&Salsa</span></Link>
 <Link to="/about">NOSOTROS</Link>
 <Link to="/menu">EL MENÚ</Link>
 <Link to="/Servicios">SERVICIOS</Link>

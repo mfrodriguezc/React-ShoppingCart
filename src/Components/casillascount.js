@@ -10,7 +10,7 @@ export function productCount(product)  {
     }
     document.getElementById('quantity').innerText = document.getElementById('input1').value = total; 
  }
- function productCount2(product){
+export function productCount2(product){
     const inputBtn = document.getElementById('input2').value;
     const newInputBtn = parseInt(inputBtn);
     let total = newInputBtn;
@@ -22,7 +22,7 @@ export function productCount(product)  {
     }
     document.getElementById('quantity').innerText = document.getElementById('input2').value = total; 
  }
- function productCount3(product){
+ export function productCount3(product){
     const inputBtn = document.getElementById('input3').value;
     const newInputBtn = parseInt(inputBtn);
     let total = newInputBtn;
@@ -34,7 +34,7 @@ export function productCount(product)  {
     }
     document.getElementById('quantity').innerText = document.getElementById('input3').value = total; 
  }
- function productCount4(product){
+ export function productCount4(product){
     const inputBtn = document.getElementById('input4').value;
     const newInputBtn = parseInt(inputBtn);
     let total = newInputBtn;
@@ -46,7 +46,7 @@ export function productCount(product)  {
     }
     document.getElementById('quantity').innerText = document.getElementById('input4').value = total; 
  }
- function productCount5(product){
+ export function productCount5(product){
     const inputBtn = document.getElementById('input5').value;
     const newInputBtn = parseInt(inputBtn);
     let total = newInputBtn;
@@ -58,7 +58,7 @@ export function productCount(product)  {
     }
     document.getElementById('quantity').innerText = document.getElementById('input5').value = total; 
  }
- function productCount6(product){
+ export function productCount6(product){
     const inputBtn = document.getElementById('input6').value;
     const newInputBtn = parseInt(inputBtn);
     let total = newInputBtn;

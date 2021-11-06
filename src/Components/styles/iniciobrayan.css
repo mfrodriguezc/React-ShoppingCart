@@ -1,0 +1,28 @@
+.carrousel {
+ 
+    background-repeat: no repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../insumos/foto1@2x.png");
+    color:#ffff;
+  }
+
+  main{
+    background-image: url("../../insumos/foto2@2x.png");
+      background-repeat: no repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      color:#ffff;
+      text-align: center;
+  }
+
+  .evento{
+    background-image:url(../../insumos/foto3@2x.png);
+    width:cover;
+    height:657px;
+    color:#fff;
+    align-items: center;
+    margin: auto 0;
+  }

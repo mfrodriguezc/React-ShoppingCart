@@ -13,7 +13,7 @@ class HaztupedidoII extends Component {
     render(){
         return(
         <>
-         <main className="container" >
+         <div className="container" >
         <section>
           <h1 className="display-3" style={{height: '250px', paddingTop: '70px'}}><strong>Haz tu pedidoo</strong></h1>
         </section>
@@ -212,7 +212,7 @@ class HaztupedidoII extends Component {
        <script src="/path/to/casillascount.js" type="text/javascript" />
        <script src="/path/to/pedido.js" type="text/javascript" />
        </Helmet>
-      </main>
+      </div>
        
         
         

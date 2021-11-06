@@ -135,9 +135,9 @@ class FormReserva extends React.Component {
   }
 }
 
-ReactDOM.render(
+/*ReactDOM.render(
   <FormReserva />,
   document.getElementById('root')
-);
+);*/
 
 export default FormReserva;

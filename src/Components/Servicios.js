@@ -7,7 +7,7 @@ render(props){
     return(
         <>
         <h1 className="servicio">{this.props.titulo}</h1>
-        <button class="boton"><Link  to="/reserva">{this.props.boton}</Link></button>
+        <button className="boton"><Link  to="/reserva">{this.props.boton}</Link></button>
         <article className="section1">
             <div>
         <p>{this.props.parrafo1}</p>

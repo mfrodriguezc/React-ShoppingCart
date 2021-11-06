@@ -13,7 +13,7 @@ class Carrito extends Component {
         <>
         
         <div>
-        <main>
+        <div>
           <div className="container">
             <section>
               <h1 className="display-5" style={{height: '250px', paddingTop: '70px'}}><strong>Carrito de Compra</strong></h1>
@@ -79,8 +79,8 @@ class Carrito extends Component {
               </div>
             </div>
           </div>
-        </main>
-        <main className="container">
+        </div>
+        <div className="container">
           <div className="modal fade" id="formularioc" tabIndex={-1} role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
             <div className="modal-dialog" role="document">
               <div className="modal-content" style={{width: '100%'}}>
@@ -169,7 +169,7 @@ class Carrito extends Component {
               </div>
             </div>
           </div>{/* aqui finaliza el modal */}
-        </main>
+        </div>
         <Helmet>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
