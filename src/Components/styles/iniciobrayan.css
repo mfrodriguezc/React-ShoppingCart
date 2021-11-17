@@ -1,14 +1,13 @@
-.carrousel {
- 
+
+  .Carousel-Sabor{
     background-repeat: no repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
     background-image: url("../../insumos/foto1@2x.png");
-    color:#ffff;
-  }
+   }
 
-  main{
+   main{
     background-image: url("../../insumos/foto2@2x.png");
       background-repeat: no repeat;
       background-size: cover;
