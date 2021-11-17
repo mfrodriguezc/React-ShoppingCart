@@ -1,16 +1,55 @@
-import React, {component} from "react";
+import React, {Component} from "react";
+import {Carousel} from 'react-bootstrap';
 
 
-
-   
 class Sabor extends React.Component{
 render(props){
     return(
         <>
-        <header className="carrousel"  >
-        <img className="logo" src={this.props.imagen}/>
-        <h1>{this.props.texto}</h1>
-        </header>
+        
+        <div className="Carousel-Sabor" style={{color:"transparent"}}>
+        <Carousel  style={{textAlign:"center",fontSize:"45px"}} >
+  <Carousel.Item  interval={700}>
+    <img width="320" height="280" 
+      className="d-block w-100"
+      src={this.props.imagen}
+      
+    />
+
+    <Carousel.Caption  >
+    <section className="carrousel1" >
+      <p style={{color:"white"}}>{this.props.texto1}</p>
+       <p className="Span" style={{backgroundColor:"red",color:"white"}}>{this.props.Span}</p>
+       <p style={{color:"white"}}>{this.props.texto2}</p>
+       </section>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item interval={500}>
+    <img width="320" height="280" 
+      className="d-block w-100"
+      src={this.props.imagen}
+      />
+
+    <Carousel.Caption>
+    <section className="carrousel2">
+      <p style={{backgroundColor:"red",color:"white"}}>{this.props.texto}</p>
+      </section>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item interval={1200}>
+    <img
+      className="d-block w-100" width="320" height="280" 
+      src={this.props.imagen}
+    />
+
+    <Carousel.Caption>
+    <section className="carrousel3">
+      <p style={{color:"white"}}>{this.props.texto}</p>
+      </section>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+</div>
         </>
     );
 }}
