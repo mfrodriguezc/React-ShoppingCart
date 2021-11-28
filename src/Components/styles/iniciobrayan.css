@@ -1,11 +1,26 @@
 
-  .Carousel-Sabor{
+  /*.Carousel-Sabor{
     background-repeat: no repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
     background-image: url("../../insumos/foto1@2x.png");
-   }
+   }*/
+   .Carousel-Sabor{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../insumos/foto1@2x.png");
+  }
+  .Carousel{
+    text-align: center;
+    font-size:45px;
+  }
+  .carrousel1{
+    color:white;
+  }
+  .span,.carrousel2{
+    background:red;
+  }
 
    main{
     background-image: url("../../insumos/foto2@2x.png");
